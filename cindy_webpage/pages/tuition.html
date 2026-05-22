@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registration fees, monthly tuition rates, payment policies, recital costs, and the 2025–2026 studio calendar for Cindy's Dance Studio.">
+  <title>Tuition &amp; Fees — Cindy's Dance Studio | Downtown Sanford, FL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/tuition.css">
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="site-header" role="banner">
+    <svg class="header-wave" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path class="header-wave-path" d="M0,88 C80,88 200,68 300,70 C400,72 440,82 490,80 C540,78 640,65 720,68 C780,71 840,88 920,88 L1000,88 L1000,150 L0,150 Z"/>
+    </svg>
+    <div class="header-logo">
+      <span class="header-studio-name">Cindy's Dance Studio</span>
+    </div>
+    <img src="../assets/images/logo/CDS%20logo.png" alt="Cindy's Dance Studio — Est. 2003" class="header-logo-emblem">
+  </header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-list" role="list">
+        <li class="nav-item"><a href="../index.html" class="nav-btn-link"><img src="../assets/images/buttons/home.jpg" data-hover="../assets/images/buttons/home2.jpg" alt="Home" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/event-venue.html" class="nav-btn-link"><img src="../assets/images/buttons/news.jpg" data-hover="../assets/images/buttons/news2.jpg" alt="Event Venue" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/hot-rod-halloween.html" class="nav-btn-link"><img src="../assets/images/buttons/location.jpg" data-hover="../assets/images/buttons/location2.jpg" alt="Hot Rod Halloween" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/class-schedule.html" class="nav-btn-link"><img src="../assets/images/buttons/schedule.jpg" data-hover="../assets/images/buttons/schedule2.jpg" alt="Class Schedule" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/tuition.html" class="nav-btn-link"><img src="../assets/images/buttons/tuition.jpg" data-hover="../assets/images/buttons/tuition2.jpg" alt="Tuition" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/dress-code.html" class="nav-btn-link"><img src="../assets/images/buttons/dress.jpg" data-hover="../assets/images/buttons/dress2.jpg" alt="Dress Code" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/recital-info.html" class="nav-btn-link"><img src="../assets/images/buttons/recital.jpg" data-hover="../assets/images/buttons/recital2.jpg" alt="Recital Info" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/cds-staff.html" class="nav-btn-link"><img src="../assets/images/buttons/staff.jpg" data-hover="../assets/images/buttons/staff2.jpg" alt="CDS Staff" class="nav-btn-img"></a></li>
+        <li class="nav-item"><a href="../pages/contact.html" class="nav-btn-link"><img src="../assets/images/buttons/contact.jpg" data-hover="../assets/images/buttons/contact2.jpg" alt="Contact Us" class="nav-btn-img"></a></li>
+      </ul>
+      <div class="nav-footer">
+        <div>
+          <p class="nav-footer-studio">Cindy's Dance Studio</p>
+          <p class="nav-footer-season">Season 2025–2026</p>
+        </div>
+        <button class="nav-admin-btn" id="adminBtn" title="Studio Admin" aria-label="Studio admin access">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="2.5"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.7 3.7l1.06 1.06M11.24 11.24l1.06 1.06M3.7 12.3l1.06-1.06M11.24 4.76l1.06-1.06"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="site-main" id="main-content">
+
+    <!-- Page Hero + Quick Alert Strip -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-hero-eyebrow">Tuition &amp; Fees</span>
+        <h1 class="page-hero-title">Tuition, Rules &amp; Important Dates</h1>
+        <p class="page-hero-lead">A simple guide to registration, monthly tuition, recital fees, attendance policies, and the 2025–2026 studio calendar.</p>
+
+        <div class="tuition-alerts" aria-label="Important payment reminders">
+          <div class="tuition-alert" data-animate data-delay="0">
+            <span class="tuition-alert-label">Tuition Due</span>
+            <p>Monthly tuition is due on the 1st of each month.</p>
+          </div>
+          <div class="tuition-alert" data-animate data-delay="80">
+            <span class="tuition-alert-label">Late Fee</span>
+            <p>A $10 late fee applies after the 10th.</p>
+          </div>
+          <div class="tuition-alert" data-animate data-delay="160">
+            <span class="tuition-alert-label">Non-Refundable</span>
+            <p>Registration, tuition, and costume payments are non-refundable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Tuition Sections -->
+    <section class="section">
+      <div class="container">
+        <div class="tuition-content">
+
+          <!-- Registration Fees -->
+          <div class="t-sec" id="registration" data-animate>
+            <div class="t-sec-hd">
+              <h2>Registration Fees</h2>
+              <p>Registration is paid at enrollment and is required before a student begins classes.</p>
+            </div>
+            <div class="t-sec-bd">
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th>Registration Fee</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1st Child</td>
+                      <td class="td-price">$30</td>
+                    </tr>
+                    <tr>
+                      <td>2nd Child / Adult</td>
+                      <td class="td-price">$25</td>
+                    </tr>
+                    <tr>
+                      <td>3rd Child</td>
+                      <td class="td-price">$20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="t-notice">
+                <strong>Re-registration:</strong> Students who withdraw for 2 months or more must re-register with a $15 fee.
+              </p>
+              <div style="margin-top: var(--space-6);">
+                <a href="#" class="btn btn--primary">CDS Auto Pay Authorization Form</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Monthly Tuition -->
+          <div class="t-sec" id="tuition" data-animate>
+            <div class="t-sec-hd">
+              <h2>Monthly Tuition</h2>
+              <p>Tuition is based on the total number of class hours taken each week.</p>
+            </div>
+            <div class="t-sec-bd">
+              <div class="table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Hours Per Week</th>
+                      <th>1st Child</th>
+                      <th>2nd Child</th>
+                      <th>3rd+ Child</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1 Hour</td><td class="td-price">$70</td><td class="td-price">$60</td><td class="td-price">$50</td></tr>
+                    <tr><td>1.5 Hours</td><td class="td-price">$95</td><td class="td-price">$80</td><td class="td-price">$65</td></tr>
+                    <tr><td>2 Hours</td><td class="td-price">$120</td><td class="td-price">$100</td><td class="td-price">$80</td></tr>
+                    <tr><td>2.5 Hours</td><td class="td-price">$140</td><td class="td-price">$118</td><td class="td-price">$93</td></tr>
+                    <tr><td>3 Hours</td><td class="td-price">$160</td><td class="td-price">$135</td><td class="td-price">$105</td></tr>
+                    <tr><td>3.5 Hours</td><td class="td-price">$178</td><td class="td-price">$150</td><td class="td-price">$118</td></tr>
+                    <tr><td>4 Hours</td><td class="td-price">$195</td><td class="td-price">$165</td><td class="td-price">$130</td></tr>
+                    <tr><td>4.5 Hours</td><td class="td-price">$208</td><td class="td-price">$175</td><td class="td-price">$140</td></tr>
+                    <tr><td>5 Hours</td><td class="td-price">$220</td><td class="td-price">$185</td><td class="td-price">$150</td></tr>
+                    <tr><td>5.5 Hours</td><td class="td-price">$230</td><td class="td-price">$195</td><td class="td-price">$160</td></tr>
+                    <tr><td>Unlimited</td><td class="td-price">$240</td><td class="td-price">$205</td><td class="td-price">$170</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="fine-print">
+                2nd and 3rd child rates apply to immediate family only. 2nd child rates also apply to adults age 21+ and active college students. Private lessons are available upon request.
+              </p>
+            </div>
+          </div>
+
+          <!-- Payment & Studio Policies -->
+          <div class="t-sec" id="policies" data-animate>
+            <div class="t-sec-hd">
+              <h2>Payment &amp; Studio Policies</h2>
+              <p>These policies help the studio keep classes, costumes, and recital planning organized for every family.</p>
+            </div>
+            <div class="t-sec-bd">
+              <div class="policy-grid">
+                <article class="policy-card">
+                  <h3>Tuition Payments</h3>
+                  <p>Monthly tuition is due on the 1st of each month. The studio does not send monthly bills.</p>
+                  <ul>
+                    <li>$10 late fee after the 10th</li>
+                    <li>$10 fee for returned or failed payments</li>
+                    <li>June tuition is prorated to half of a month</li>
+                  </ul>
+                </article>
+                <article class="policy-card">
+                  <h3>Withdrawal Notice</h3>
+                  <p>Families are responsible for all enrolled classes until Cindy's Dance Studio receives written notice of withdrawal.</p>
+                </article>
+                <article class="policy-card">
+                  <h3>Payment Methods</h3>
+                  <p>The studio accepts cash, check, money order, cashier's check, Visa, and MasterCard for tuition payments.</p>
+                </article>
+                <article class="policy-card">
+                  <h3>Auto Pay</h3>
+                  <p>CDS Auto Pay is available for tuition payments with a $3 convenience fee.</p>
+                </article>
+              </div>
+              <p class="t-notice">
+                <strong>Non-refundable policy:</strong> All registration and tuition fees are non-refundable.
+              </p>
+            </div>
+          </div>
+
+          <!-- Recital & Costume Fees -->
+          <div class="t-sec" id="recital" data-animate>
+            <div class="t-sec-hd">
+              <h2>Recital &amp; Costume Fees</h2>
+              <p>Costume and recital payments are handled separately from monthly tuition.</p>
+            </div>
+            <div class="t-sec-bd">
+              <dl class="detail-list">
+                <div class="detail-row">
+                  <dt>Costume Balance Due</dt>
+                  <dd>November, before Thanksgiving Break.</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>Tiny Tots / Pre-K Costumes</dt>
+                  <dd>$90 each.</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>All Other Levels</dt>
+                  <dd>$120 each.</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>Recital Participation Fee</dt>
+                  <dd>$25 per family to help cover recital T-shirts, programs, and theater rental.</dd>
+                </div>
+              </dl>
+              <p class="t-notice">
+                <strong>Important:</strong> Costume payments are not on Auto Pay and are non-refundable. Accounts must be current to receive recital costumes and participate in the annual recital. Costume payments should be made separately from tuition.
+              </p>
+            </div>
+          </div>
+
+          <!-- Attendance & Make-Up Classes -->
+          <div class="t-sec" id="attendance" data-animate>
+            <div class="t-sec-hd">
+              <h2>Attendance &amp; Make-Up Classes</h2>
+              <p>The studio follows the Seminole County Public School session, with the listed studio closures.</p>
+            </div>
+            <div class="t-sec-bd">
+              <div class="policy-grid">
+                <article class="policy-card">
+                  <h3>Absences</h3>
+                  <p>If a student is absent, they may attend a comparable make-up class at a later date agreed upon by the parent and instructor.</p>
+                </article>
+                <article class="policy-card">
+                  <h3>Closures</h3>
+                  <p>Holidays, missed classes, and severe weather closures may be made up based on availability.</p>
+                </article>
+                <article class="policy-card">
+                  <h3>Make-Up Responsibility</h3>
+                  <p>Scheduling make-up classes is the parent's responsibility.</p>
+                </article>
+                <article class="policy-card">
+                  <h3>No Tuition Adjustments</h3>
+                  <p>Tuition is not adjusted for holidays, missed classes, or classes that are not made up.</p>
+                </article>
+              </div>
+              <p class="fine-print">Notices for schedule changes and holiday breaks will be posted in the studio.</p>
+            </div>
+          </div>
+
+          <!-- Important Dates & Holidays -->
+          <div class="t-sec" id="important-dates" data-animate>
+            <div class="t-sec-hd">
+              <h2>Important Dates &amp; Holidays</h2>
+              <p>Studio calendar for the 2025–2026 dance season.</p>
+            </div>
+            <div class="t-sec-bd">
+              <dl class="date-list">
+                <div class="date-row date-row--key">
+                  <dt>Dance Session Begins</dt>
+                  <dd>August 4, 2025</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Labor Day</dt>
+                  <dd>September 1, 2025 — No class</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Thanksgiving Holiday</dt>
+                  <dd>November 24–28, 2025 — No class</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Christmas Holiday</dt>
+                  <dd>December 15, 2025 – January 2, 2026 — No class</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Classes Resume</dt>
+                  <dd>Monday, January 5, 2026</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Spring Break</dt>
+                  <dd>March 16–20, 2026 — No class</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Classes Resume</dt>
+                  <dd>March 23, 2026</dd>
+                </div>
+                <div class="date-row">
+                  <dt>Memorial Day</dt>
+                  <dd>May 25, 2026 — No class</dd>
+                </div>
+                <div class="date-row date-row--key">
+                  <dt>Dress Rehearsal</dt>
+                  <dd>Thursday, June 4, 2026</dd>
+                </div>
+                <div class="date-row date-row--key">
+                  <dt>Recital</dt>
+                  <dd>Friday &amp; Saturday, June 5–6, 2026</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Cindy's Dance Studio</div>
+        <p class="footer-tagline">Where every child finds their stage.<br>Downtown Sanford, FL · Est. 2005</p>
+      </div>
+      <div>
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-list">
+          <li><a href="../pages/class-schedule.html">Class Schedule</a></li>
+          <li><a href="../pages/tuition.html">Tuition &amp; Fees</a></li>
+          <li><a href="../pages/dress-code.html">Dress Code</a></li>
+          <li><a href="../pages/recital-info.html">Recital Info</a></li>
+          <li><a href="../pages/event-venue.html">Event Venue</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Studio</p>
+        <ul class="footer-list">
+          <li><a href="../pages/cds-staff.html">Our Staff</a></li>
+          <li><a href="../pages/hot-rod-halloween.html">Hot Rod Halloween</a></li>
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+          <li><a href="tel:+14073243999">407-324-3999</a></li>
+          <li><a href="mailto:cindysdancestudio@cfl.rr.com">Send an Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2025–2026 Cindy's Dance Studio · 119 S. Magnolia Ave, Sanford FL 32771 · All Rights Reserved</p>
+    </div>
+  </footer>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
