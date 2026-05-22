@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Class Schedule Admin — Cindy's Dance Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="site-header" role="banner">
+    <svg class="header-wave" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path class="header-wave-path" d="M0,88 C80,88 200,68 300,70 C400,72 440,82 490,80 C540,78 640,65 720,68 C780,71 840,88 920,88 L1000,88 L1000,150 L0,150 Z"/>
+    </svg>
+    <div class="header-logo">
+      <span class="header-studio-name">Cindy's Dance Studio</span>
+    </div>
+    <img src="assets/images/logo/CDS%20logo.png" alt="Cindy's Dance Studio — Est. 2003" class="header-logo-emblem">
+  </header>
+
+  <nav class="site-nav" aria-label="Admin navigation">
+    <div class="nav-inner">
+      <div class="nav-eyebrow">
+        <span class="nav-eyebrow-text">Admin</span>
+        <span class="nav-eyebrow-line" aria-hidden="true"></span>
+      </div>
+      <ul class="nav-list" role="list">
+        <li class="nav-item"><a href="index.html" class="nav-link"><svg class="nav-link-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7L8 2l6 5v7H10V9H6v5H2V7z"/></svg>Back to Site</a></li>
+        <li class="nav-divider" role="separator" aria-hidden="true"></li>
+        <li class="nav-item"><a href="admin.html" class="nav-link"><svg class="nav-link-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1.5" y="2" width="5.5" height="5.5" rx="0.75"/><rect x="9" y="2" width="5.5" height="5.5" rx="0.75"/><rect x="1.5" y="8.5" width="5.5" height="5.5" rx="0.75"/><rect x="9" y="8.5" width="5.5" height="5.5" rx="0.75"/></svg>Dashboard</a></li>
+        <li class="nav-item"><a href="admin-schedule.html" class="nav-link active" aria-current="page"><svg class="nav-link-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1.5" y="3" width="13" height="11" rx="1"/><path d="M5 3V1.5M11 3V1.5M1.5 7h13"/></svg>Class Schedule</a></li>
+      </ul>
+      <div class="nav-footer">
+        <div>
+          <p class="nav-footer-studio">Studio Admin</p>
+          <p class="nav-footer-season">Season 2025–2026</p>
+        </div>
+        <button class="nav-admin-btn admin-active" id="adminBtn" title="Admin dashboard" aria-label="Admin dashboard">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="8" cy="8" r="2.5"/>
+            <path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.7 3.7l1.06 1.06M11.24 11.24l1.06 1.06M3.7 12.3l1.06-1.06M11.24 4.76l1.06-1.06"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="site-main" id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-hero-eyebrow">Admin · Class Schedule</span>
+        <h1 class="page-hero-title">Class Schedule</h1>
+        <p class="page-hero-lead">Upload the current class schedule PDF. Once saved, it instantly updates what parents see on the website.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <!-- Current status bar -->
+        <div class="sched-status">
+          <div class="sched-status-left">
+            <p class="sched-status-label">Current Schedule</p>
+            <p class="sched-status-text" id="statusText">Loading…</p>
+          </div>
+          <span class="sched-badge" id="statusBadge"></span>
+        </div>
+
+        <!-- Upload zone -->
+        <div class="sched-upload-zone" id="uploadZone">
+          <input type="file" id="pdfFile" accept=".pdf,application/pdf" aria-label="Select PDF file">
+          <div class="sched-upload-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="width:36px;height:36px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <p class="sched-upload-label">Click to select a PDF, or drag and drop here</p>
+          <p class="sched-upload-hint">PDF files only · Maximum size ~8 MB</p>
+          <p class="sched-file-name" id="fileName"></p>
+        </div>
+
+        <!-- PDF Preview -->
+        <div class="sched-preview-wrap">
+          <div class="sched-preview-bar">
+            <span class="sched-preview-bar-title">Schedule Preview</span>
+            <a href="#" id="viewLiveLink" target="_blank" class="btn btn--light-outline btn--sm">View Live Page</a>
+          </div>
+          <iframe class="sched-preview-frame" id="pdfPreview" title="Class schedule PDF preview"></iframe>
+        </div>
+
+        <!-- Actions -->
+        <div class="sched-actions">
+          <button class="btn btn--primary" id="saveBtn" disabled>Save &amp; Publish</button>
+          <button class="btn btn--ghost" id="clearBtn" disabled>Remove Custom PDF</button>
+          <a href="pages/class-schedule.html" target="_blank" class="btn btn--secondary">View Schedule Page</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Cindy's Dance Studio</div>
+        <p class="footer-tagline">Downtown Sanford, FL · Est. 2005</p>
+      </div>
+      <div>
+        <ul class="footer-list">
+          <li><a href="pages/class-schedule.html">Class Schedule</a></li>
+          <li><a href="pages/tuition.html">Tuition &amp; Fees</a></li>
+          <li><a href="pages/dress-code.html">Dress Code</a></li>
+          <li><a href="pages/recital-info.html">Recital Info</a></li>
+          <li><a href="pages/event-venue.html">Event Venue</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-list">
+          <li><a href="pages/cds-staff.html">Our Staff</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+          <li><a href="tel:+14073243999">407-324-3999</a></li>
+          <li><a href="mailto:cindysdancestudio@cfl.rr.com">Send an Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2025–2026 Cindy's Dance Studio · 119 S. Magnolia Ave, Sanford FL 32771 · All Rights Reserved</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var KEY = 'cds-schedule-pdf';
+  var DEFAULT_PDF = 'pdfs/class-schedule.pdf';
+
+  var statusText = document.getElementById('statusText');
+  var statusBadge = document.getElementById('statusBadge');
+  var pdfPreview = document.getElementById('pdfPreview');
+  var pdfFile = document.getElementById('pdfFile');
+  var fileName = document.getElementById('fileName');
+  var saveBtn = document.getElementById('saveBtn');
+  var clearBtn = document.getElementById('clearBtn');
+  var uploadZone = document.getElementById('uploadZone');
+
+  var staged = null;
+
+  function setStatus(text, badgeText, badgeClass, previewSrc) {
+    statusText.textContent = text;
+    statusBadge.textContent = badgeText;
+    statusBadge.className = 'sched-badge ' + badgeClass;
+    if (previewSrc !== undefined) pdfPreview.src = previewSrc;
+  }
+
+  function refresh() {
+    var stored = localStorage.getItem(KEY);
+    staged = null;
+    fileName.textContent = '';
+    saveBtn.disabled = true;
+    if (stored) {
+      setStatus('Custom schedule is live on the website', 'Custom', 'sched-badge--live', stored);
+      clearBtn.disabled = false;
+    } else {
+      setStatus('Showing default schedule — upload a new one to replace it', 'Default', 'sched-badge--default', DEFAULT_PDF);
+      clearBtn.disabled = true;
+    }
+  }
+
+  pdfFile.addEventListener('change', function () {
+    var file = pdfFile.files[0];
+    if (!file) return;
+    if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
+      alert('Please select a PDF file.');
+      pdfFile.value = '';
+      return;
+    }
+    fileName.textContent = file.name + ' · ' + (file.size / 1024).toFixed(0) + ' KB — ready to save';
+    setStatus('New PDF selected — click Save & Publish when ready', 'Staged', 'sched-badge--default');
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      staged = e.target.result;
+      pdfPreview.src = staged;
+      saveBtn.disabled = false;
+    };
+    reader.readAsDataURL(file);
+  });
+
+  uploadZone.addEventListener('dragover', function (e) {
+    e.preventDefault();
+    uploadZone.classList.add('dragover');
+  });
+
+  uploadZone.addEventListener('dragleave', function () {
+    uploadZone.classList.remove('dragover');
+  });
+
+  uploadZone.addEventListener('drop', function (e) {
+    e.preventDefault();
+    uploadZone.classList.remove('dragover');
+    var file = e.dataTransfer.files[0];
+    if (!file) return;
+    var dt = new DataTransfer();
+    dt.items.add(file);
+    pdfFile.files = dt.files;
+    pdfFile.dispatchEvent(new Event('change'));
+  });
+
+  saveBtn.addEventListener('click', function () {
+    if (!staged) return;
+    try {
+      localStorage.setItem(KEY, staged);
+      refresh();
+      setStatus('Schedule updated! Parents will see the new PDF immediately.', 'Custom', 'sched-badge--live');
+    } catch (e) {
+      alert('Unable to save — the PDF may be too large for browser storage.\nTry compressing the PDF or using a smaller file (ideally under 3 MB).');
+    }
+  });
+
+  clearBtn.addEventListener('click', function () {
+    if (!confirm('Remove the custom PDF and revert to the default schedule?')) return;
+    localStorage.removeItem(KEY);
+    pdfFile.value = '';
+    refresh();
+  });
+
+  refresh();
+})();
+</script>
+</body>
+</html>

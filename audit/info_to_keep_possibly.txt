@@ -1,0 +1,13 @@
+#claude should not use this as suggestions at all but possible things to have on the new site if user agrees
+
+## Key Content to Preserve (from Audit)
+
+All of the following must be accurately reproduced from the original site when building out individual pages:
+
+- **Tuition table:** Monthly rates $70–$240 (1st child) scaled by hours/week; family discount rates for 2nd/3rd child; registration fees; late fees; payment policies
+- **Dress code:** Specific brand + model numbers per discipline (So Danca SD60 for ballet, Bloch FlexTap 388 for tap, So Danca JZ43 for jazz/lyrical, etc.)
+- **Recital 2026:** Picture day April 18 · Dress rehearsal June 4 · Performances June 5 (7pm) + June 6 (12pm & 7pm)
+- **Academic calendar:** Season Aug 4 2025 · Christmas break Dec 15–Jan 2 · Spring break Mar 16–20
+- **Vendor:** N'styl Performance Wear — 4241 LB McLeod Rd, Orlando FL 32811, 407-418-1275
+- **Contact:** 407-324-3999 · cindysdancestudio@cfl.rr.com · 119 S. Magnolia Ave, Sanford FL 32771
+- **Free trial class offer** — strong acquisition tool, must be prominent everywhere
